@@ -1,0 +1,13 @@
+#btnSubmit {
+  border: 2px solid lightgrey;
+  padding:2%;
+  border-radius: 5px;
+}
+
+.success {
+  border: 1px solid green;
+}
+
+.error {
+  border: 1px solid red;
+}

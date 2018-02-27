@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Validación de tarjeta</h1>
+  <div class="container-fluid">
+    <form action="">
+      <div class="form-group">
+        <label for="cn">Número de tarjeta</label>
+        <input type="number" class="form-control" id="cn" aria-describedby="" placeholder="Número de tarjeta" autocomplete="cc-number" required>
+      </div>
+      <div class="form-group">
+        <label for="exp">Fecha de vencimiento</label>
+        <input type="month" class="form-control month-select" id="exp" aria-describedby="" placeholder="Fecha de vencimiento" autocomplete="cc-exp-month">
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="number" class="form-control" id="cvv" aria-describedby="" placeholder="CVV" autocomplete="cc-csc" required>
+        <!-- <small id="cvvHelp" class="form-text text-muted">The CVV number is behind your credit card and next where is placed your signature</small> -->
+        <small id="cvvHelp" class="form-text text-muted">El número CVV, es el código de validación de tres dígitos que se encuentra al reverso de la tarjeta</small>
+      </div>
+      <div class="form-group">
+        <label for="name"> Nombre completo</label>
+        <input type="text" class="form-control" id="name" aria-describedby="" placeholder="Nombre completo">
+      </div>
+      <input type="submit" name="pay" value="Pagar" id="btnSubmit">
+    </form>
+  </div>
+
+  <script type="text/javascript" src="./js/app.js">
+  </script>
+</body>
+
+</html>
